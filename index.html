@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic Progress</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.card{
+    width:380px;
+    height:500px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow-y:auto;
+    padding:15px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.header h3{
+    font-size:20px;
+    font-weight:600;
+    line-height:1.4;
+}
+
+.progress{
+    background:#FFD86A;
+    color:#555;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.task{
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:8px;
+    background:#fff;
+}
+
+.task.active{
+    background:#eef3ff;
+}
+
+.task-title{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:8px;
+}
+
+.task-desc{
+    color:#555;
+    font-size:16px;
+    line-height:1.5;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="header">
+        <h3>Epic 1: FinRelief AI Application Development & System Setup</h3>
+        <div class="progress">50%</div>
+    </div>
+
+    <div class="task active">
+        <div class="task-title">
+            Python Backend Environment Setup
+        </div>
+    </div>
+
+    <div class="task">
+        <div class="task-desc">
+            <strong>Backend Dependency Installation</strong><br>
+            All backend dependencies are installed using
+            <b>requirements.txt</b>.
+        </div>
+    </div>
+
+    <div class="task">
+        <div class="task-desc">
+            <strong>Frontend Setup (React / Vite)</strong><br>
+            The frontend is built using React.js and Vite to provide a fast and responsive user interface.
+        </div>
+    </div>
+
+    <div class="task">
+        <div class="task-desc">
+            <strong>Project Structure Setup</strong><br>
+            Organize folders for backend, frontend, configuration, and documentation.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
